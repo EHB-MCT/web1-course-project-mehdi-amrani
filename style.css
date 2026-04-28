@@ -6,7 +6,9 @@ body{
 
 header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+     padding: 10px 20px;
 }
 
 .button1 a{
@@ -22,4 +24,17 @@ header{
 
 .button1 a:hover {
     background-color: #eaeaea;
+}
+
+.about h1{
+    
+}
+
+.img img{}
+
+.intro-text{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 500px;
 }
