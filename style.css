@@ -1,7 +1,7 @@
 body {
 	background:
 		linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.52)),
-		url("image/background12.jpg");
+		url("image/background-samurai.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -54,12 +54,12 @@ main {
 
 .imgRL {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     width: 100%;
     max-width: 1200px;
     min-height: 700px;
+	overflow: hidden;
 }
 
 .img {
@@ -100,27 +100,29 @@ main {
 .Phrase-RL {
     font-size: 120px;
 	line-height: 0.9;
-	position: absolute;
+	position: relative;
 	text-align: center;
-	bottom: 00px;
-	left: 150%;
-	transform: translateX(-50%);
 	text-decoration: line-through;
-	z-index: -1;
+	z-index: 3;
 	text-decoration-thickness: 5px;
 	margin: 0;
+	width: min(100%, 900px);
+	justify-self: center;
+	align-self: center;
 }
 
 .ball {
 	position: absolute;
-	top: 40px;
-	left: 80px;
+	top: 70px;
+	left: 50px;
+	z-index: 1;
 }
 
 .fennec {
 	position: absolute;
 	right: 20px;
-	top: 130px;
+	bottom: 70px;
+	z-index: 1;
 }
 
 .lookism img {
@@ -506,7 +508,7 @@ main {
 
 	.fennec {
 		right: -20px;
-		top: 140px;
+		bottom: 70px;
 	}
 
 	.fennec img {
@@ -515,7 +517,6 @@ main {
 
 	.Phrase-RL {
 		font-size: 82px;
-		bottom: 35px;
 	}
 
 	.page-hero,
@@ -572,7 +573,7 @@ main {
 
 	.fennec {
 		right: -70px;
-		top: 130px;
+		bottom: 70px;
 	}
 
 	.fennec img {
@@ -581,7 +582,6 @@ main {
 
 	.Phrase-RL {
 		font-size: 56px;
-		bottom: 40px;
 	}
 
 	.content-grid,
