@@ -16,9 +16,17 @@ main {
 	flex-direction: column;
 	align-items: center;
 	padding: 30px 20px;
-	gap: 20px;
+	gap: 60px;
 	position: relative;
-	min-height: 150vh;
+	min-height: auto;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	width: 100%;
 }
 
 .img img {
@@ -26,8 +34,8 @@ main {
 	height: 400px;
 	object-fit: cover;
 	border-radius: 50px;
+	position: relative;
 	z-index: 1;
-    margin-top: -20px;
 }
 
 .intro-text {
@@ -43,52 +51,84 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 0px;
+    max-width: 1200px;
+    min-height: 700px;
 }
 
 .img {
     position: relative;
     display: flex;
     justify-content: center;
+	isolation: isolate;
 }
 
 .fennec img {
-    width: 650px;
+    width: 520px;
     object-fit: cover;
     transform: rotate(30deg);
-    margin: 0;
-    margin-top: 250px;
 }
 
 .ball img {
-    width: 450px;
-    height: 450px;
+    width: 340px;
+    height: 340px;
     object-fit: cover;
-    margin: 0;
-    margin-top: -100px;
 }
 
 .yokoso {
     font-size: 430px;
     position: absolute;
-    top: -70%;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
     margin: 0;
-    z-index: -1;
+    z-index: 0;
     background: linear-gradient(180deg, rgb(255, 119, 1), transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.5;
 }
 
-.Phrase-RL {
-    font-size: 150px;
+/* .Phrase-RL {
+    font-size: 120px;
+	line-height: 0.9;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0px;
+    left: 150%;
+    transform: translateX(-50%);
     text-align: center;
     text-decoration: line-through;
     text-decoration-thickness: 5px;
+	z-index: 2;
+	margin: 0;
+	width: 100%;
+} */
+
+
+.Phrase-RL {
+    font-size: 120px;
+	position: absolute;
+	text-align: center;
+	bottom: -20%;
+	left: 80%;
+	text-decoration: line-through;
+	z-index: -1;
+	text-decoration-thickness: 5px;
+	text-decoration-color: #ffffff;
+}
+
+
+
+
+.ball {
+	position: absolute;
+	top: 40px;
+	left: 80px;
+}
+
+.fennec {
+	position: absolute;
+	right: 20px;
+	top: 130px;
 }
 
 .lookism img {
