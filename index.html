@@ -1,84 +1,117 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Myself</title>
+		<meta
+			name="description"
+			content="Portfolio van Mehdi Amrani, student met interesse in technologie, video editing, Rocket League en manga."
+		/>
+		<title>Portfolio Mehdi Amrani</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<header>
-			<div class="about">
-				<h1>Portfolio</h1>
-			</div>
-			<nav class="button1">
-				<a href="#">Home</a>
-				<a href="#l">Game</a>
-				<a href="#">Manga</a>
+		<header class="site-header">
+			<nav class="topnav" aria-label="Hoofdnavigatie">
+				<a href="index.html" class="logo">Portfolio</a>
+
+				<button
+					class="menu-toggle"
+					type="button"
+					aria-label="Navigatie openen"
+					aria-controls="main-menu"
+					aria-expanded="false"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<ul id="main-menu" class="nav-links">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="ervaring.html">Ervaring</a></li>
+					<li><a href="vaardigheden.html">Vaardigheden</a></li>
+				</ul>
 			</nav>
 		</header>
-		<main>
-			<div class="img">
-				<img src="image/Mehdi-Split-color.jpg" alt="" />
-				<h1 class="yokoso">Yokoso</h1>
-			</div>
-			<div class="intro-text">
-				<h2>Yo, I'm Mehdi</h2>
-				<p>
-					I'm an 18-year-old student at Erasmushogeschool Brussel. I'm
-					passionate about technology — whether it's learning new software,
-					coding, or video editing, I'm always looking for something new to
-					experiment with. I genuinely enjoy just opening up a program and
-					figuring out how it works. When I'm not behind my desk studying,
-					you'll probably find me playing Rocket League — which I'd say I'm
-					pretty good at — or diving into a new manhwa/manga. Over the past 3
-					years I've read 50+ of them, so yeah, it's safe to say that I like
-					reading them.
-				</p>
-			</div>
 
-			<div class="imgRL">
+		<main>
+			<section class="hero" aria-labelledby="home-title">
+				<div class="img">
+					<img
+						src="image/Mehdi-Split-color.jpg"
+						alt="Portretfoto van Mehdi Amrani"
+					/>
+					<p class="yokoso">Yokoso</p>
+				</div>
+
+				<div class="intro-text">
+					<h1 id="home-title">Yo, I'm Mehdi</h1>
+					<p>
+						I'm an 18-year-old student at Erasmushogeschool Brussel. I'm
+						passionate about technology - whether it's learning new software,
+						coding, or video editing, I'm always looking for something new to
+						experiment with. I genuinely enjoy just opening up a program and
+						figuring out how it works. When I'm not behind my desk studying,
+						you'll probably find me playing Rocket League - which I'd say I'm
+						pretty good at - or diving into a new manhwa/manga. Over the past 3
+						years I've read 50+ of them, so yeah, it's safe to say that I like
+						reading them.
+					</p>
+				</div>
+			</section>
+
+			<section class="imgRL" aria-labelledby="rocket-league-title">
 				<div class="ball">
-					<img src="image/ball.webp" alt="" />
-					<h1 class="Phrase-RL">This is<br />Rocket<br />League!!</h1>
+					<img src="image/ball.webp" alt="Rocket League bal" />
+					<h2 class="Phrase-RL" id="rocket-league-title">
+						This is<br />Rocket<br />League!!
+					</h2>
 				</div>
 				<div class="fennec">
-					<img src="image/fennec.png" alt="" />
+					<img src="image/fennec.png" alt="Fennec auto uit Rocket League" />
 				</div>
-			</div>
+			</section>
 
-			<div class="manga">
-				<div class="lookism">
-					<img src="image/lookism.jpg" alt="" />
-					<h2>
+			<section class="manga" aria-labelledby="manga-title">
+				<h2 id="manga-title" class="section-title">Manga en manhwa</h2>
+
+				<article class="lookism">
+					<img src="image/lookism.jpg" alt="Gun Park uit Lookism" />
+					<p>
 						<span class="highlight">Gun Park</span> is one of the most feared
 						and powerful characters in Lookism. He is known as an absolute
-						monster in terms of strength — no one has ever managed to defeat
+						monster in terms of strength - no one has ever managed to defeat
 						him. At one point in the manhwa, he fought against thousands of
 						people at the same time and still came out undefeated. Every major
 						fighter in the story feared going up against him. He is cold,
 						calculated and overwhelmingly strong, making him one of the most
 						memorable antagonists in the entire series.
-					</h2>
-				</div>
-				<div class="bleach">
-					<img src="image/ichigoat.jpg" alt="" />
-					<h2>
+					</p>
+				</article>
+
+				<article class="bleach">
+					<img src="image/ichigoat.jpg" alt="Ichigo Kurosaki uit Bleach" />
+					<p>
 						<span class="highlight-bleach">Ichigo Kurosaki</span> is the main
 						character of Bleach and one of the most powerful beings in the
 						entire series. He starts off as a regular teenager who accidentally
 						absorbs the powers of a Soul Reaper, but over time he awakens
 						multiple forms of power that go far beyond anything seen before. His
-						hollow form — where he loses control and lets his inner hollow take
-						over — is one of the most terrifying and iconic moments in the
+						hollow form - where he loses control and lets his inner hollow take
+						over - is one of the most terrifying and iconic moments in the
 						manga. At his peak, Ichigo possesses the powers of a Soul Reaper, a
 						Hollow, a Fullbring and a Quincy all at once, making him virtually
 						unstoppable. No matter how many times he gets knocked down, he
 						always finds a way to get back up and push past his limits.
-					</h2>
-				</div>
-			</div>
+					</p>
+				</article>
+			</section>
 		</main>
-		<footer></footer>
+
+		<footer class="site-footer">
+			<p>&copy; 2026 Mehdi Amrani</p>
+		</footer>
 	</body>
 </html>

@@ -4,12 +4,11 @@ body {
 	margin: 0 auto;
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-    background-color: rgb(232, 230, 255);
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: #333;
 }
 
 main {
@@ -20,25 +19,6 @@ main {
 	gap: 20px;
 	position: relative;
 	min-height: 150vh;
-    background-color: rgb(255, 255, 255);
-}
-
-.button1 a {
-	display: inline-block;
-	text-decoration: none;
-	color: #000000;
-	margin-top: 10px;
-	margin-right: 10px;
-	padding: 10px 20px;
-	background-color: rgba(0, 0, 0, 0.05);
-	border-radius: 10px;
-}
-
-.button1 a:hover {
-	background-color: #eaeaea;
-}
-
-.about h1 {
 }
 
 .img img {
@@ -89,9 +69,10 @@ main {
 }
 
 .yokoso {
-    font-size: 500px;
+    font-size: 430px;
     position: absolute;
-    top: -110%;
+    top: -70%;
+    margin: 0;
     z-index: -1;
     background: linear-gradient(180deg, rgb(255, 119, 1), transparent);
     -webkit-background-clip: text;
@@ -143,7 +124,7 @@ main {
     margin-top: 200px;
 }
 
-.lookism h2 {
+.lookism p {
 	font-size: 15px;
 	max-width: 400px;
 	background-color: rgb(159, 159, 255, 0.4);
@@ -155,7 +136,7 @@ main {
     
 }
 
-.bleach h2{
+.bleach p {
     font-size: 15px;
     max-width: 400px;
     background-color: rgb(159, 159, 255, 0.4);
@@ -182,4 +163,70 @@ main {
 	width: 400px;
 	height: 600px;
 	align-items: center;
+}
+
+/* Style the navigation menu */
+.topnav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #333;
+	padding: 0 20px;
+}
+
+.logo {
+	font-weight: bold;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topnav a:hover:not(.active) {
+	background-color: #ddd;
+	color: black;
+}
+
+.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.menu-toggle {
+	display: none;
+	width: 44px;
+	height: 44px;
+	background: #111;
+	border: 0;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.menu-toggle span {
+	display: block;
+	height: 3px;
+	margin: 5px 0;
+	background: white;
+	border-radius: 2px;
+}
+
+.site-footer {
+	padding: 20px;
+	text-align: center;
+	background-color: #333;
+	color: white;
 }
