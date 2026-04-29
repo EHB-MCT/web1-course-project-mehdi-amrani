@@ -336,3 +336,7 @@ main {
 	max-height: 260px;
 	object-fit: contain;
 }
+
+.page-manga {
+	margin-top: 40px;
+}
