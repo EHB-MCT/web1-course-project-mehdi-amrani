@@ -1,5 +1,10 @@
 body {
-	background: white;
+	background:
+		linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.52)),
+		url("image/background12.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0 auto;
 	overflow-x: hidden;
@@ -37,6 +42,7 @@ main {
 	border-radius: 50px;
 	position: relative;
 	z-index: 1;
+	transition: transform 0.3s ease;
 }
 
 .intro-text {
@@ -67,12 +73,14 @@ main {
     width: 520px;
     object-fit: cover;
     transform: rotate(30deg);
+	transition: transform 0.3s ease;
 }
 
 .ball img {
     width: 340px;
     height: 340px;
     object-fit: cover;
+	animation: floatBall 4s ease-in-out infinite;
 }
 
 .yokoso {
@@ -94,14 +102,13 @@ main {
 	line-height: 0.9;
 	position: absolute;
 	text-align: center;
-	bottom: 40px;
-	left: 50%;
+	bottom: 00px;
+	left: 150%;
 	transform: translateX(-50%);
 	text-decoration: line-through;
-	z-index: 2;
+	z-index: -1;
 	text-decoration-thickness: 5px;
 	margin: 0;
-	width: 100%;
 }
 
 .ball {
@@ -239,6 +246,7 @@ main {
 	border: 0;
 	cursor: pointer;
 	padding: 10px;
+	transition: background-color 0.3s ease;
 }
 
 .menu-toggle span {
@@ -292,6 +300,7 @@ main {
 	max-height: 480px;
 	object-fit: cover;
 	border-radius: 20px;
+	transition: transform 0.3s ease;
 }
 
 .skills-hero img {
@@ -365,6 +374,64 @@ main {
 
 .page-manga {
 	margin-top: 40px;
+}
+
+.hero,
+.imgRL,
+.page-hero,
+.content-grid,
+.skills-grid,
+.timeline,
+.media-row,
+.manga {
+	animation: fadeInUp 0.7s ease both;
+}
+
+.img img:hover,
+.page-hero img:hover {
+	transform: scale(1.03);
+}
+
+.fennec img:hover {
+	transform: rotate(30deg) scale(1.05);
+}
+
+.info-card,
+.skill-card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover,
+.skill-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.menu-toggle:hover {
+	background-color: #04AA6D;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes floatBall {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-14px);
+	}
 }
 
 @media (max-width: 900px) {
