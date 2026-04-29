@@ -38,4 +38,4 @@ De code is zelf geschreven in HTML en CSS. JavaScript is van de hamburgermenu, d
 
 Ik heb een hamburgermenu gebruikt van iemand op het internet:"https://www.w3schools.com/howto/howto_js_mobile_navbar.asp".
 
-De afbeeldingen staan lokaal in de map `image/`. De meeste zijn gedownload van het internet.
+De afbeeldingen staan lokaal in de map `image/`. De meesten zijn gedownload van het internet, ze komen gewoon van google of van pinterest.

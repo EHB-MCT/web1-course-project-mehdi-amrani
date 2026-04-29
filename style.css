@@ -103,7 +103,7 @@ main {
 	position: relative;
 	text-align: center;
 	text-decoration: line-through;
-	z-index: 3;
+	z-index: -1;
 	text-decoration-thickness: 5px;
 	margin: 0;
 	width: min(100%, 900px);
